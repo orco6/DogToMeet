@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.newproj">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AdminMeetingsActivity"></activity>
+        <activity android:name=".AdminEditProfileActivity" />
+        <activity android:name=".AdminProfileActivity" />
+        <activity android:name=".MeetingDetailsActivity" />
+        <activity android:name=".FindMeetingsActivity" />
+        <activity android:name=".UpcomingMeetingsActivity" />
+        <activity
+            android:name=".CreateMeetingActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".AdminAllUsers" />
+        <activity android:name=".FriendsRequests" />
+        <activity android:name=".AdminToUserProfileActivity" />
+        <activity android:name=".AdminEditUserProfileActivity" />
+        <activity
+            android:name=".SearchUsersActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".ParksActivity" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".UserScreenActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".HomeAdminActivity" />
+        <activity
+            android:name=".AdminRegisterationActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MyFriendsActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

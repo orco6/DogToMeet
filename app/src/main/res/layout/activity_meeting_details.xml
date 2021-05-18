@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MeetingDetailsActivity">
+
+    <TextView
+        android:id="@+id/meeting_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="הצטרפו אל נדב ומותק במפגש לכלבים מסוג האסקי סיבירי בפארק ה\n בתאריך 22.4.20 בשעה 18:00"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="22dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:text="קצת על המפגש">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/meeting_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:text="בואו להנות ממפגש האסקים בלה בלה תבואו יהיה כיף בלה בלה עוד תיאור חפירה חפירה תבואו עם מצב רוח בלה בלה בלה תנו לכלבים קצת להשתחרר ולהכיר חברים חדשים בלה בלה זהו">
+
+        </TextView>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:textSize="22dp"
+        android:textColor="#000000"
+        android:text="אודות הפארק">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/park_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textSize="26dp"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp">
+                </TextView>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rowCount="3"
+                    android:columnCount="2"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/park_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="test"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="גודל הפארק"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/park_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="test"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="אורך הפארק"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp">
+
+                    </TextView>
+                </GridLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/park_img"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/join_meeting_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="הצטרף למפגש"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#B5B5B5"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/numOfParticipants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:textSize="22dp"
+            android:textColor="#000000"
+            android:text="(0)">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:textSize="22dp"
+            android:textColor="#000000"
+            android:text="משתתפים">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/participants_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

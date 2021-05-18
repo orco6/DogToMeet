@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FindMeetingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <Spinner
+                android:id="@+id/choose_park"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textDirection="ltr"
+                android:spinnerMode="dropdown"
+                android:layout_margin="10dp">
+
+            </Spinner>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <Spinner
+                android:id="@+id/choose_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:entries="@array/choose_date"
+                android:gravity="right"
+                android:spinnerMode="dropdown"
+                android:dropDownHeight="10dp"
+                android:textDirection="ltr">
+
+            </Spinner>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <Spinner
+                android:id="@+id/choose_dog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/dog_arrays"
+                android:gravity="center"
+                android:textDirection="ltr"
+                android:spinnerMode="dialog"
+                android:layout_margin="10dp">
+
+            </Spinner>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/search_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="חפש פגישות"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#B5B5B5"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5">
+
+        </Button>
+
+        <ListView
+            android:id="@+id/result_meetings_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

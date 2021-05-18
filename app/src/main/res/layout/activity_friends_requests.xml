@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:background="@drawable/background"
+    tools:context=".FriendsRequests">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/request_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0)"
+            android:textStyle="italic"
+            android:textSize="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#000000">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="בקשות חברות"
+            android:textSize="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#000000">
+        </TextView>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/request_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+
+</LinearLayout>

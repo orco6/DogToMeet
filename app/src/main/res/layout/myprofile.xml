@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        tools:ignore="Suspicious0dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="Suspicious0dp"
+        android:orientation="vertical"
+        >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp"
+                >
+                <ImageView
+                    android:id="@+id/pic1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/user"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@id/pic1"
+                    >
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="שם משתמש"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="נדב כהן"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp">
+
+                <ImageView
+                    android:id="@+id/pic2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mail"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@id/pic2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="דואר אלקטרוני"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_gravity="right"/>
+                    <TextView
+                        android:id="@+id/profileEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="nadavcohen306@gmail.com"
+                        android:layout_gravity="right"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/pic3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pin"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@+id/pic3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="כתובת"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_gravity="right"/>
+                    <TextView
+                        android:id="@+id/myAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="האיילה 32 באר שבע"
+                        android:layout_gravity="right"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp">
+
+                <ImageView
+                    android:id="@+id/pic4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cake"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@id/pic4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="גיל"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_gravity="right"/>
+                    <TextView
+                        android:id="@+id/profileAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="27"
+                        android:layout_gravity="right" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp">
+
+                <ImageView
+                    android:id="@+id/pic5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pets"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@+id/pic5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="חבר"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_gravity="right"/>
+                    <TextView
+                        android:id="@+id/dogName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="מותק"
+                        android:layout_gravity="right"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp">
+
+                <ImageView
+                    android:id="@+id/pic6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/track"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@id/pic6">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="סוג הכלב"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_gravity="right"/>
+                    <TextView
+                        android:id="@+id/typeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Husky"
+                        android:layout_gravity="right"/>
+
+                </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <ImageView
+            android:id="@+id/editProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/edit_new"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".AdminMeetingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/admin_meetings_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(0)"
+                android:textStyle="italic"
+                android:textSize="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#000000">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="הפגישות הקרובות"
+                android:textSize="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#000000">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <RadioGroup
+                android:id="@+id/admin_meeting_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:checkedButton="@id/admin_all_meetings"
+                android:layout_marginTop="10dp"
+                android:gravity="right">
+
+                <RadioButton
+                    android:id="@+id/admin_meetings_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="#000000"
+                    android:text="היסטוריה">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/admin_meetings_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="#000000"
+                    android:text="היום">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/admin_all_meetings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:buttonTint="#000000"
+                    android:text="כל הפגישות">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/admin_meetings_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

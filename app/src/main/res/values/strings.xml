@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">NewProj</string>
+    <string name="register">Register</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="age">Age</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="dog_prompt">בחר סוג כלב</string>
+
+    <string-array name="choose_date">
+        <item>כל תאריך</item>
+        <item>בחר תאריך</item>
+    </string-array>
+
+    <string-array name="dog_arrays">
+        <item>הכל</item>
+        <item>אמסטף</item>
+        <item>בולדוג</item>
+        <item>פיטבול</item>
+        <item>ביגל</item>
+        <item>בוקסר</item>
+        <item>גולדן רטריבר</item>
+        <item>גק ראסל טרייר</item>
+        <item>דני ענק</item>
+        <item>האסקי סיברי</item>
+        <item>כנעני</item>
+        <item>לברדור רטריבר</item>
+        <item>פאג</item>
+        <item>פומרניין</item>
+        <item>פודל</item>
+        <item>פקינז</item>
+        <item>ציוואווה</item>
+        <item>קוקר ספנייל</item>
+        <item>רועה גרמני</item>
+        <item>רועה אוסטרלי</item>
+        <item>רועה בלגי</item>
+        <item>רוטוויילר</item>
+        <item>שיצו</item>
+        <item>שפיץ</item>
+        <item>שר פיי</item>
+    </string-array>
+</resources>
